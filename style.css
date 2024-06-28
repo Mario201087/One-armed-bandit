@@ -1,0 +1,115 @@
+body {
+    background: url('sunset.jpg'); /* Przykładowy obrazek zastępczy dla tła pustyni */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.saloon-container {
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background: rgba(139, 69, 19, 0.8); /* SaddleBrown background with transparency */
+}
+@media (max-width: 767px) {
+    .saloon-container {
+        margin-top: 25px;
+    }
+}
+.navbar {
+    background-color: #8B4513; /* SaddleBrown for the navbar */
+}
+
+.navbar-brand {
+    color: #FFF; /* White color for the logo */
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+.navbar-nav .nav-link {
+    color: #FFF; /* White color for the links */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.styled-p {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(210, 180, 140, 0.4); /* Tan background */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    font-size: 2em; /* Increase font size for symbols */
+    transition: transform 0.5s ease, background-color 0.2s; /* Animation for transform and background color */
+}
+/* Center text in input fields */
+input.form-control {
+    text-align: center;
+}
+
+/* Ensure placeholder is visible */
+input::placeholder {
+    color: #999; /* Adjust the color if necessary */
+    opacity: 1; /* Ensure the placeholder is fully opaque */
+}
+
+/* Make text bold for the formatted value */
+input.bold-value {
+    font-weight: bold;
+}
+
+.flash-effect {
+    animation: flash 1s infinite;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8); /* Yellow shadow for flash effect */
+}
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+.zoom-in {
+    animation: zoomIn 0.5s forwards;
+}
+
+
+@keyframes flash {
+    0% { opacity: 1; box-shadow: 0 0 20px rgba(255, 255, 0, 0.8); }
+    50% { opacity: 0.5; box-shadow: 0 0 10px rgba(255, 255, 0, 0.4); }
+    100% { opacity: 1; box-shadow: 0 0 20px rgba(255, 255, 0, 0.8); }
+}
+.btn-primary {
+    background-color: #8B4513; /* SaddleBrown */
+    border-color: #8B4513;
+}
+
+.btn-secondary {
+    background-color: #A0522D; /* Sienna */
+    border-color: #A0522D;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #7B3F00; /* Darker SaddleBrown */
+    border-color: #7B3F00;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: #804000; /* Darker Sienna */
+    border-color: #804000;
+}
